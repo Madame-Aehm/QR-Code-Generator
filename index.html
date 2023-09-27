@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AHu's QR Generator 🦩</h1>
+  <div class="form formValFalse">
+    <div class="valText">
+      <input type="text" id="input" class="valTrue" placeholder="Gimme URL.." />
+      <small class="hidden">You gotta write something ☝️</small>
+    </div>
+    <button >Generate!</button>
+  </div>
+  <div id="qrContainer" class="hidden">
+    <div class="container">
+      <div id="qrcode"></div>
+    </div>
+    <small>Right click and save me! <br> No ads or fees 😉</small>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
