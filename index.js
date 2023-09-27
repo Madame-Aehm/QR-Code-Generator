@@ -41,6 +41,16 @@ const addListeners = () => {
   input.addEventListener("focus", (e) => {
     setValidation(e.target, true, button); 
   });
+  input.addEventListener("keypress", (e) => {
+    if (e.key === 'Enter' && !e.target.value) {
+      console.log("enter clicked if")
+      setValidation(e.target, false, button);
+    } else if (e.key === 'Enter') {
+      console.log("enter clicked else if")
+      setValidation(e.target, true, button);
+      handleSubmit(button);
+    }
+  });
   button.addEventListener("click", () => handleSubmit(button));
 }
 
