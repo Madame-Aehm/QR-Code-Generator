@@ -44,10 +44,11 @@ button {
   border: solid #333 2px;
   border-radius: 5px;
   font-size: larger;
+  background-color: aliceblue;
 }
 
 button:active {
-  background-color: aliceblue;
+  background-color: rgb(252, 162, 237);
 }
 
 img {
@@ -74,7 +75,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 400px) {
   .form {
     flex-direction: column;
   }
